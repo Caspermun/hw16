@@ -3,7 +3,7 @@ class Person:
         self.name = name
         self.surname = surname
         self.age = age
-        self.id = id
+        self.__id = id
 
     def get_fn(self):
         return self.name + ' ' + self.surname
@@ -13,7 +13,7 @@ class Person:
         else:
             return self.age
     def get_id(self):
-        return self.id
+        return self.__id
 
     def __str__(self):
         return 'Fullname:'
